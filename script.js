@@ -15,10 +15,10 @@ const bands = [
 ];
 
 function strip(bandName) {
-  return bandName.replace(/^(a |the |an )/i, "").trim();
+  return bandName.replace(/^(a |the |an )/i, "").trim();  //Regular expression
 }
 
-const sortedBands = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
+const sortedBands = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));  //Ternary operator and an arrow function
 
 document.querySelector("#bands").innerHTML = 
 sortedBands
